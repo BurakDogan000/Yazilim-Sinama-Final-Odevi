@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24CBA018-680B-4823-BD8C-25039D3221DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>istakipProgrami</RootNamespace>
+    <AssemblyName>istakipProgrami</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGorev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGorev.Designer.cs">
+      <DependentUpon>formGorev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGorevDegisimHareketler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGorevDegisimHareketler.Designer.cs">
+      <DependentUpon>formGorevDegisimHareketler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formGorevli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formGorevli.Designer.cs">
+      <DependentUpon>formGorevli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formKayit.Designer.cs">
+      <DependentUpon>formKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAnaIslemYeri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAnaIslemYeri.Designer.cs">
+      <DependentUpon>formAnaIslemYeri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formProjeOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formProjeOlustur.Designer.cs">
+      <DependentUpon>formProjeOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gorev.cs" />
+    <Compile Include="Kullanici.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Proje.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sifreleme.cs" />
+    <Compile Include="VTBaglan.cs" />
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGorev.resx">
+      <DependentUpon>formGorev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGorevDegisimHareketler.resx">
+      <DependentUpon>formGorevDegisimHareketler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formGorevli.resx">
+      <DependentUpon>formGorevli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formKayit.resx">
+      <DependentUpon>formKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAnaIslemYeri.resx">
+      <DependentUpon>formAnaIslemYeri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formProjeOlustur.resx">
+      <DependentUpon>formProjeOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resimler\gorevEkleme.png" />
+    <Content Include="Resimler\gorevliEkleme.jpg" />
+    <Content Include="Resimler\kullaniciAnaIslemler.png" />
+    <Content Include="Resimler\kullaniciAnaIslemleri.png" />
+    <Content Include="Resimler\projeEkleme.jpg" />
+    <Content Include="Resimler\register.png" />
+    <Content Include="Resimler\user.png" />
+    <Content Include="Resimler\yesil.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
